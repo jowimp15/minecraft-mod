@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "prueva-mod:block/lamp"
+    },
+    "clicked=true": {
+      "model": "prueva-mod:block/lamp_on"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "prueva-mod:cursed_blood_bottle"
+    },
+    "R": {
+      "item": "prueva-mod:live_rose"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BRB",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "prueva-mod:orb_life"
+  }
+}

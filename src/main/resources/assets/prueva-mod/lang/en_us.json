@@ -1,0 +1,34 @@
+{
+  "item.prueva-mod.broken_sword": "Broken Sword",
+  "item.prueva-mod.hechizo": "Hechizador",
+  "item.prueva-mod.ore_galium": "Galium Ore",
+  "item.prueva-mod.galium_ingot": "Galium ingot",
+  "item.prueva-mod.galium_sword": "Galium Sword",
+  "item.prueva-mod.live_rose": "Live Rose",
+  "item.prueva-mod.live_ingot": "Live Ingot",
+  "item.prueva-mod.orb_life": "Orb of Life",
+  "item.prueva-mod.cursed_blood_bottle": "Cursed Blood Bottle",
+  "item.prueva-mod.clotted_blood": "ClottedBlood",
+  "item.prueva-mod.live_sword": "Live Sword",
+  "item.prueva-mod.live_shovel": "Live Shovel",
+  "item.prueva-mod.live_axe": "Live Axe",
+  "item.prueva-mod.live_pickaxe": "Live Pickaxe",
+  "item.prueva-mod.live_hoe": "Live Hoe",
+  "item.prueva-mod.cursed_fang": "Cursed Fang",
+  "item.prueva-mod.demonic_claws": "Demonic Claws",
+
+
+  "block.prueva-mod.galium_block": "Galium Block",
+  "block.prueva-mod.green": "Block Geliar",
+  "block.prueva-mod.lamp": "Ugly Lamp",
+  "block.prueva-mod.azufre_stone": "azufre1",
+  "block.prueva-mod.azufre_stone2": "azufre2",
+  "block.prueva-mod.azufre_stone3": "azufre3",
+  "block.prueva-mod.azufre_stone4": "azufre4",
+  "block.prueva-mod.azufre_stone5": "azufre5",
+  "block.prueva-mod.azufre_stone6": "azufre5",
+
+  "itemgroup.prueva-mod.galium_items": "Galiums",
+
+  "tooltip.prueva-mod.chisel_item.tooltip": "Hey... papa... El FINAL"
+}
