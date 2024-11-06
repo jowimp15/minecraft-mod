@@ -31,35 +31,30 @@ public class FirstItem {
     public static final Item LIVE_AXE = registerItem("live_axe", new AxeItem(modTools.LIVE_MATERIAL, new Item.Settings().fireproof().attributeModifiers(ShovelItem.createAttributeModifiers(modTools.LIVE_MATERIAL,  5.3F, -3.0F))));
     public static final Item LIVE_HOE = registerItem("live_hoe", new HoeItem(modTools.LIVE_MATERIAL, new Item.Settings().fireproof().attributeModifiers(ShovelItem.createAttributeModifiers(modTools.LIVE_MATERIAL,  -3.0F, 0.0F))));
 
-    public static final Item NETHERITE_HELMET = registerItem(
-            "netherite_helmet",
-            new ArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.HELMET, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(37)))
-    );
-    public static final Item NETHERITE_CHESTPLATE = registerItem(
-            "netherite_chestplate",
-            new ArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.CHESTPLATE, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(37)))
-    );
-    public static final Item NETHERITE_LEGGINGS = registerItem(
-            "netherite_leggings",
-            new ArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.LEGGINGS, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(37)))
-    );
-    public static final Item NETHERITE_BOOTS = registerItem(
-            "netherite_boots",
-            new ArmorItem(ArmorMaterials.NETHERITE, ArmorItem.Type.BOOTS, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(37)))
-    );
+    // ARMOR
 
-
-
-//
+        public static final Item LIVE_HELMET = registerItem(
+            "live_helmet",
+            new ArmorItem(ModArmorMaterial.LIVE_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(40)))
+    );
+    public static final Item LIVE_CHESTPLATE = registerItem(
+            "live_chestplate",
+            new ArmorItem(ModArmorMaterial.LIVE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(40)))
+    );
+    public static final Item LIVE_LEGGINGS = registerItem(
+            "live_leggings",
+            new ArmorItem(ModArmorMaterial.LIVE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(40)))
+    );
+    public static final Item LIVE_BOOTS = registerItem(
+            "live_boots",
+            new ArmorItem(ModArmorMaterial.LIVE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(40)))
+    );
     // POTION
-//    public static final Item CURSED_BLOOD_BOTTLE = new PotionItem(new Item.Settings().maxCount(8));
-
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(PruevaMod.MOD_ID, name), item);
     };
 
     public static void registerModItems(){
-
     };
 };

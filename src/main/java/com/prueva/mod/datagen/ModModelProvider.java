@@ -6,6 +6,7 @@ import com.prueva.mod.block.custom.LampBlock;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -40,7 +41,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(FirstItem.GALIUM_SWORD, Models.HANDHELD);
         itemModelGenerator.register(FirstItem.LIVE_INGOT, Models.GENERATED);
         itemModelGenerator.register(FirstItem.ORB_LIFE, Models.GENERATED);
-//        itemModelGenerator.register(FirstItem.CURSED_BLOOD_BOTTLE, Models.GENERATED);
         itemModelGenerator.register(FirstItem.CLOTTED_BLOOD, Models.GENERATED);
         itemModelGenerator.register(FirstItem.CURSED_FANG, Models.GENERATED);
         itemModelGenerator.register(FirstItem.DEMONIC_CLAWS, Models.GENERATED);
@@ -49,5 +49,12 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(FirstItem.LIVE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(FirstItem.LIVE_HOE, Models.HANDHELD);
         itemModelGenerator.register(FirstItem.LIVE_SWORD, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor((ArmorItem) FirstItem.LIVE_BOOTS);
+        itemModelGenerator.registerArmor((ArmorItem) FirstItem.LIVE_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) FirstItem.LIVE_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) FirstItem.LIVE_HELMET);
+
+
     }
 }

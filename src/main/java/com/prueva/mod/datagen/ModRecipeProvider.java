@@ -16,6 +16,8 @@ import net.minecraft.registry.RegistryWrapper;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
+import static com.prueva.mod.PotionsRegister.ModPotionRegister.CURSED_BLOOD_BOTTLE;
+
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
@@ -67,15 +69,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(FirstItem.ORB_LIFE), conditionsFromItem(FirstItem.ORB_LIFE))
                 .offerTo(recipeExporter);
 
-//        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, FirstItem.ORB_LIFE)
-//                .pattern("BBB")
-//                .pattern("BRB")
-//                .pattern("BBB")
-//                .input('B', FirstItem.CURSED_BLOOD_BOTTLE)
-//                .criterion(hasItem(FirstItem.CURSED_BLOOD_BOTTLE), conditionsFromItem(FirstItem.CURSED_BLOOD_BOTTLE))
-//                .input('R', FirstItem.LIVE_ROSE)
-//                .criterion(hasItem(FirstItem.LIVE_ROSE), conditionsFromItem(FirstItem.LIVE_ROSE))
-//                .offerTo(recipeExporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, FirstItem.ORB_LIFE)
+                .pattern("BBB")
+                .pattern("BRB")
+                .pattern("BBB")
+                .input('B', FirstItem.CLOTTED_BLOOD)
+                .criterion(hasItem(FirstItem.CLOTTED_BLOOD), conditionsFromItem(FirstItem.CLOTTED_BLOOD))
+                .input('R', FirstItem.LIVE_ROSE)
+                .criterion(hasItem(FirstItem.LIVE_ROSE), conditionsFromItem(FirstItem.LIVE_ROSE))
+                .offerTo(recipeExporter);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, FirstItem.GALIUM_INGOT, 9)
                 .input(BlocksMod.GALIUM_BLOCK)

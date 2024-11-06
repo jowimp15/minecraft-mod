@@ -1,17 +1,25 @@
 package com.prueva.mod.Item;
 
+import com.prueva.mod.PotionsRegister.ModPotionRegister;
 import com.prueva.mod.PruevaMod;
 import com.prueva.mod.block.BlocksMod;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.minecraft.item.ItemConvertible;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.PotionContentsComponent;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.PotionItem;
 import net.minecraft.potion.Potion;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+
+import java.util.Optional;
+
+import static com.prueva.mod.PotionsRegister.ModPotionRegister.CURSED_BLOOD_BOTTLE;
 
 public class ModItemGroup {
 
@@ -44,10 +52,14 @@ public class ModItemGroup {
                         entries.add(FirstItem.LIVE_SWORD);
                         entries.add(FirstItem.CURSED_FANG);
                         entries.add(FirstItem.DEMONIC_CLAWS);
-
-//                        entries.add(FirstItem.CURSED_BLOOD_BOTTLE);
+                        entries.add(FirstItem.LIVE_BOOTS);
+                        entries.add(FirstItem.LIVE_HELMET);
+                        entries.add(FirstItem.LIVE_LEGGINGS);
+                        entries.add(FirstItem.LIVE_CHESTPLATE);
                     }))
+
                     .build());
+
     public static void registerItemGroups(){
 
     }
