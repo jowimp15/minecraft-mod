@@ -3,6 +3,10 @@
     "prueva-mod:live_boots",
     "prueva-mod:live_chestplate",
     "prueva-mod:live_leggings",
-    "prueva-mod:live_helmet"
+    "prueva-mod:live_helmet",
+    "prueva-mod:conscious_boots",
+    "prueva-mod:conscious_chestplate",
+    "prueva-mod:conscious_leggings",
+    "prueva-mod:conscious_helmet"
   ]
 }

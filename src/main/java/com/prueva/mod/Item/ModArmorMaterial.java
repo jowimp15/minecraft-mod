@@ -20,14 +20,24 @@ public class ModArmorMaterial {
     public static final RegistryEntry<ArmorMaterial> LIVE_ARMOR_MATERIAL = registerArmorMaterial("live_material", ()->
         new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map-> {
             map.put(ArmorItem.Type.BOOTS, 3);
-            map.put(ArmorItem.Type.LEGGINGS, 6);
-            map.put(ArmorItem.Type.CHESTPLATE, 8);
+            map.put(ArmorItem.Type.LEGGINGS, 7);
+            map.put(ArmorItem.Type.CHESTPLATE, 10);
             map.put(ArmorItem.Type.HELMET, 3);
             map.put(ArmorItem.Type.BODY, 11);
         }), 15, SoundEvents.ITEM_ARMOR_EQUIP_WOLF, () -> Ingredient.ofItems(FirstItem.LIVE_INGOT),
-                List.of(new ArmorMaterial.Layer(Identifier.of(PruevaMod.MOD_ID, "live_material"))), 0, 0
+                List.of(new ArmorMaterial.Layer(Identifier.of(PruevaMod.MOD_ID, "live_material"))), 3.0f, 0.1f
         ));
 
+    public static final RegistryEntry<ArmorMaterial> CONSCIOUS_ARMOR_MATERIAL = registerArmorMaterial("conscious_armor", ()->
+            new ArmorMaterial(Util.make(new EnumMap<>(ArmorItem.Type.class), map-> {
+                map.put(ArmorItem.Type.BOOTS, 3);
+                map.put(ArmorItem.Type.LEGGINGS, 5);
+                map.put(ArmorItem.Type.CHESTPLATE, 5);
+                map.put(ArmorItem.Type.HELMET, 3);
+                map.put(ArmorItem.Type.BODY, 11);
+            }), 10, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, () -> Ingredient.ofItems(FirstItem.LIVE_INGOT),
+                    List.of(new ArmorMaterial.Layer(Identifier.of(PruevaMod.MOD_ID, "conscious_armor"))), 0f, 0f
+            ));
 
 
     public static RegistryEntry<ArmorMaterial> registerArmorMaterial(String name, Supplier<ArmorMaterial> material){

@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_live_helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "prueva-mod:live_helmet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_live_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "prueva-mod:live_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_ripping_horn": {
+      "conditions": {
+        "items": [
+          {
+            "items": "prueva-mod:ripping_horn"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "prueva-mod:conscious_helmet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ripping_horn",
+      "has_live_helmet",
+      "has_live_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "prueva-mod:conscious_helmet"
+    ]
+  }
+}

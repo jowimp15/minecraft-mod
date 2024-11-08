@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "prueva-mod:galium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "prueva-mod:galium_ingot"
+  }
+}

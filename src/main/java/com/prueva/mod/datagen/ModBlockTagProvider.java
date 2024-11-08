@@ -25,7 +25,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(BlocksMod.AZUFRE_STONE3)
                 .add(BlocksMod.AZUFRE_STONE4)
                 .add(BlocksMod.AZUFRE_STONE5)
-                .add(BlocksMod.AZUFRE_STONE6);
+                .add(BlocksMod.AZUFRE_STONE6)
+                .add(BlocksMod.AZUFRE_STONE7)
+                .add(BlocksMod.LIVE_BLOCK);
+
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
@@ -40,7 +43,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(BlocksMod.AZUFRE_STONE2)
                 .add(BlocksMod.AZUFRE_STONE3)
                 .add(BlocksMod.AZUFRE_STONE4)
-                .add(BlocksMod.AZUFRE_STONE5);
+                .add(BlocksMod.AZUFRE_STONE5)
+                .add(BlocksMod.AZUFRE_STONE7)
+                .add(BlocksMod.LIVE_BLOCK);
+
 
         getOrCreateTagBuilder(ModTags.Blocks.TAGS_FUNCTION)
                 .add(BlocksMod.GALIUM_BLOCK)

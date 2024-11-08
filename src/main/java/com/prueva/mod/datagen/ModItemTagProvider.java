@@ -4,7 +4,6 @@ import com.prueva.mod.Item.FirstItem;
 import com.prueva.mod.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.minecraft.item.FireChargeItem;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
 
@@ -29,5 +28,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR).add(FirstItem.LIVE_CHESTPLATE);
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR).add(FirstItem.LIVE_LEGGINGS);
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR).add(FirstItem.LIVE_HELMET);
+
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR).add(FirstItem.CONSCIOUS_BOOTS);
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR).add(FirstItem.CONSCIOUS_CHESTPLATE);
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR).add(FirstItem.CONSCIOUS_LEGGINGS);
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR).add(FirstItem.CONSCIOUS_HELMET);
     }
 }

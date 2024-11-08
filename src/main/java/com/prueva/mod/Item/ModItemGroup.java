@@ -56,6 +56,19 @@ public class ModItemGroup {
                         entries.add(FirstItem.LIVE_HELMET);
                         entries.add(FirstItem.LIVE_LEGGINGS);
                         entries.add(FirstItem.LIVE_CHESTPLATE);
+                        entries.add(BlocksMod.AZUFRE_STONE7);
+                        entries.add(BlocksMod.LIVE_BLOCK);
+                        entries.add(FirstItem.CONSCIOUS_BOOTS);
+                        entries.add(FirstItem.CONSCIOUS_CHESTPLATE);
+                        entries.add(FirstItem.CONSCIOUS_HELMET);
+                        entries.add(FirstItem.CONSCIOUS_LEGGINGS);
+                        entries.add(FirstItem.RIPPING_HORN);
+                        entries.add(FirstItem.CURSED_MEAT);
+                        entries.add(FirstItem.DEMONIC_HEART);
+                        entries.add(FirstItem.STRONGE_BONE);
+                        entries.add(FirstItem.LIVING_HEART);
+                        entries.add(FirstItem.ROTTEN_REMAINS);
+
                     }))
 
                     .build());

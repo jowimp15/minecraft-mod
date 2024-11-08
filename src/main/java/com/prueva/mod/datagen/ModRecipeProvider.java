@@ -79,6 +79,79 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(FirstItem.LIVE_ROSE), conditionsFromItem(FirstItem.LIVE_ROSE))
                 .offerTo(recipeExporter);
 
+        //CONSCIOUS-----
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, FirstItem.CONSCIOUS_HELMET)
+                .pattern("CAC")
+                .pattern("L L")
+                .pattern("   ")
+                .input('C', FirstItem.RIPPING_HORN)
+                .criterion(hasItem(FirstItem.RIPPING_HORN), conditionsFromItem(FirstItem.RIPPING_HORN))
+                .input('A', FirstItem.LIVE_HELMET)
+                .criterion(hasItem(FirstItem.LIVE_HELMET), conditionsFromItem(FirstItem.LIVE_HELMET))
+                .input('L', FirstItem.LIVE_ROSE)
+                .criterion(hasItem(FirstItem.LIVE_INGOT), conditionsFromItem(FirstItem.LIVE_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, FirstItem.CONSCIOUS_CHESTPLATE)
+                .pattern("L L")
+                .pattern("GPG")
+                .pattern("LCL")
+                .input('L', FirstItem.LIVE_INGOT)
+                .criterion(hasItem(FirstItem.LIVE_INGOT), conditionsFromItem(FirstItem.LIVE_INGOT))
+                .input('G', FirstItem.CURSED_FANG)
+                .criterion(hasItem(FirstItem.CURSED_FANG), conditionsFromItem(FirstItem.CURSED_FANG))
+                .input('P', FirstItem.LIVE_CHESTPLATE)
+                .criterion(hasItem(FirstItem.LIVE_CHESTPLATE), conditionsFromItem(FirstItem.LIVE_CHESTPLATE))
+                .input('C', FirstItem.LIVING_HEART)
+                .criterion(hasItem(FirstItem.LIVING_HEART), conditionsFromItem(FirstItem.LIVING_HEART))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, FirstItem.CONSCIOUS_LEGGINGS)
+                .pattern("LPL")
+                .pattern("H H")
+                .pattern("L L")
+                .input('L', FirstItem.LIVE_INGOT)
+                .criterion(hasItem(FirstItem.LIVE_INGOT), conditionsFromItem(FirstItem.LIVE_INGOT))
+                .input('H', FirstItem.STRONGE_BONE)
+                .criterion(hasItem(FirstItem.STRONGE_BONE), conditionsFromItem(FirstItem.STRONGE_BONE))
+                .input('P', FirstItem.LIVE_LEGGINGS)
+                .criterion(hasItem(FirstItem.LIVE_LEGGINGS), conditionsFromItem(FirstItem.LIVE_LEGGINGS))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, FirstItem.CONSCIOUS_BOOTS)
+                .pattern("   ")
+                .pattern("L L")
+                .pattern("LBL")
+                .input('B', FirstItem.LIVE_BOOTS)
+                .criterion(hasItem(FirstItem.LIVE_BOOTS), conditionsFromItem(FirstItem.LIVE_BOOTS))
+                .input('L', FirstItem.LIVE_INGOT)
+                .criterion(hasItem(FirstItem.LIVE_INGOT), conditionsFromItem(FirstItem.LIVE_INGOT))
+                .offerTo(recipeExporter);
+
+        // -------------------
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, FirstItem.LIVING_HEART)
+                .pattern(" C ")
+                .pattern("CHC")
+                .pattern(" O ")
+                .input('C', FirstItem.CURSED_MEAT)
+                .criterion(hasItem(FirstItem.CURSED_MEAT), conditionsFromItem(FirstItem.CURSED_MEAT))
+                .input('H', FirstItem.DEMONIC_HEART)
+                .criterion(hasItem(FirstItem.DEMONIC_HEART), conditionsFromItem(FirstItem.DEMONIC_HEART))
+                .input('O', FirstItem.ORB_LIFE)
+                .criterion(hasItem(FirstItem.ORB_LIFE), conditionsFromItem(FirstItem.ORB_LIFE))
+                .offerTo(recipeExporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, FirstItem.CURSED_MEAT, 1)
+                .input(FirstItem.ROTTEN_REMAINS)
+                .criterion(hasItem(FirstItem.ROTTEN_REMAINS), conditionsFromItem(FirstItem.ROTTEN_REMAINS))
+                .input(FirstItem.CLOTTED_BLOOD)
+                .criterion(hasItem(FirstItem.CLOTTED_BLOOD), conditionsFromItem(FirstItem.CLOTTED_BLOOD))
+                .input(Items.PORKCHOP)
+                .criterion(hasItem(Items.PORKCHOP), conditionsFromItem(Items.PORKCHOP))
+                .offerTo(recipeExporter);
+
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, FirstItem.GALIUM_INGOT, 9)
                 .input(BlocksMod.GALIUM_BLOCK)
                 .criterion(hasItem(BlocksMod.GALIUM_BLOCK), conditionsFromItem(BlocksMod.GALIUM_BLOCK))

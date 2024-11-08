@@ -1,9 +1,11 @@
-// 1.21	2024-11-06T01:22:43.0248458	prueva mod/Block Loot Tables
+// 1.21	2024-11-08T20:02:03.2809939	prueva mod/Block Loot Tables
 936bea44720512fb9a41516ca4f55e9e93974752 data\prueva-mod\loot_table\blocks\azufre_stone6.json
 d8ed01ee1309383201f284697d2cabd933f566cb data\prueva-mod\loot_table\blocks\azufre_stone3.json
 88e86c70835e4424a5def991d316df1cf6d61e30 data\prueva-mod\loot_table\blocks\galium_block.json
 89f709333a646e9543ad7c00685c72c3c4e33738 data\prueva-mod\loot_table\blocks\azufre_stone.json
+162a0bae3b4aa6374c4d2728e6091d20583cd286 data\prueva-mod\loot_table\blocks\azufre_stone7.json
 389520c65c4ddd34711cfad5e8cb34329894c5ab data\prueva-mod\loot_table\blocks\azufre_stone2.json
+ebdba82b4e4fd831f367fa18d2a550720b5c4937 data\prueva-mod\loot_table\blocks\live_block.json
 9258734d13e1beaaa683fda165cb11fa3fdd5691 data\prueva-mod\loot_table\blocks\azufre_stone5.json
 438b28755b08bdfd48508c011703610a2400505d data\prueva-mod\loot_table\blocks\azufre_stone4.json
 559977246aae5f7092816432e1f5589e26468eb2 data\prueva-mod\loot_table\blocks\green.json

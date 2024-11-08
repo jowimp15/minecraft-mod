@@ -1,8 +1,8 @@
-// 1.21	2024-11-06T01:22:43.0195846	prueva mod/Tags for minecraft:item
-3339c22f361215715b98e6713059261963772e34 data\minecraft\tags\item\trimmable_armor.json
+// 1.21	2024-11-08T20:02:03.2758029	prueva mod/Tags for minecraft:item
+9b02996e8d6dc653eb2616650dd7c702a5cf00b5 data\minecraft\tags\item\trimmable_armor.json
 1d2739ffc51d002a6889f6f744480c227fd79789 data\minecraft\tags\item\shovels.json
 ce314f3fd025f8f17ddef3e7ee390462844ade28 data\minecraft\tags\item\hoes.json
-4cc1f7bfa588efa3893d77ce77b7735f712efc4c data\minecraft\tags\item\swords.json
 820078dcbb353285648e2db2e774bf845db4846c data\minecraft\tags\item\pickaxes.json
+4cc1f7bfa588efa3893d77ce77b7735f712efc4c data\minecraft\tags\item\swords.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\prueva-mod\tags\item\tags_function_items.json
 e8d21aa2843a76c373ecb7e267feb9e46f27f6db data\minecraft\tags\item\axes.json

@@ -14,12 +14,21 @@
   "item.prueva-mod.live_pickaxe": "Live Pickaxe",
   "item.prueva-mod.live_hoe": "Live Hoe",
   "item.prueva-mod.cursed_fang": "Cursed Fang",
-  "item.prueva-mod.demonic_claws": "Demonic Claws",
+  "item.prueva-mod.ripping_horn": "Ripping Horn",
+  "item.prueva-mod.cursed_meat": "Cursed Meat",
+  "item.prueva-mod.demonic_heart": "Demonic Heart",
+  "item.prueva-mod.stronge_bone": "Stronge Bone",
+  "item.prueva-mod.living_heart": "Living Heart",
+  "item.prueva-mod.rotten_remains": "Rotten Remains",
 
   "item.prueva-mod.live_helmet": "Live Helmet",
   "item.prueva-mod.live_chestplate": "Live Chestplate",
   "item.prueva-mod.live_leggings": "Live Leggings",
   "item.prueva-mod.live_boots": "Live Boots",
+  "item.prueva-mod.conscious_helmet": "Conscious Helmet",
+  "item.prueva-mod.conscious_chestplate": "Conscious Chestplate",
+  "item.prueva-mod.conscious_leggings": "Conscious Leggings",
+  "item.prueva-mod.conscious_boots": "Conscious Boots",
 
   "block.prueva-mod.galium_block": "Galium Block",
   "block.prueva-mod.green": "Block Geliar",
@@ -30,10 +39,10 @@
   "block.prueva-mod.azufre_stone4": "azufre4",
   "block.prueva-mod.azufre_stone5": "azufre5",
   "block.prueva-mod.azufre_stone6": "azufre5",
+  "block.prueva-mod.azufre_stone7": "azufre7",
+  "block.prueva-mod.live_block": "Live Block",
 
   "item.minecraft.potion.effect.cursed_blood_bottle": "Cursed Blood Bottle",
-
   "itemgroup.prueva-mod.galium_items": "Galiums",
-
   "tooltip.prueva-mod.chisel_item.tooltip": "Hey... papa... El FINAL"
 }

@@ -1,0 +1,65 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cursed_fang": {
+      "conditions": {
+        "items": [
+          {
+            "items": "prueva-mod:cursed_fang"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_live_chestplate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "prueva-mod:live_chestplate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_live_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "prueva-mod:live_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_living_heart": {
+      "conditions": {
+        "items": [
+          {
+            "items": "prueva-mod:living_heart"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "prueva-mod:conscious_chestplate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_live_ingot",
+      "has_cursed_fang",
+      "has_live_chestplate",
+      "has_living_heart"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "prueva-mod:conscious_chestplate"
+    ]
+  }
+}

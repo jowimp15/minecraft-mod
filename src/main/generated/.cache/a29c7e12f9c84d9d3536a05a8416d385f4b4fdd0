@@ -1,8 +1,8 @@
-// 1.21	2024-11-06T01:22:43.0110548	prueva mod/Tags for minecraft:block
+// 1.21	2024-11-08T20:02:03.2688002	prueva mod/Tags for minecraft:block
 22adedbd5f22afbc9a6299de82353e127972ca3f data\prueva-mod\tags\block\tags_function_blocks.json
-66b9d02cef650947b7bddb2ed5088d8a31eac8aa data\minecraft\tags\block\needs_stone_tool.json
 ba14ad9ab375f40fef2b8c5b23171fe33263a883 data\prueva-mod\tags\block\incorrect_galium_tool.json
+7c8e192804c174186c53abd560d2a329e7b74341 data\minecraft\tags\block\needs_stone_tool.json
 ca61649e2b356b6a56eb4bc1578696902cc15f94 data\minecraft\tags\block\needs_iron_tool.json
-0fb317fbaf2961f29b03409a8ea1a587bffa49ea data\minecraft\tags\block\mineable\pickaxe.json
+c0968e9a3c1eb9002e034ff8f19ff0912bfbfbf5 data\minecraft\tags\block\mineable\pickaxe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\block\needs_diamond_tool.json
 a249c46329a41538f49a564e1f14338aaf1be5a0 data\prueva-mod\tags\block\incorrect_live_tool.json

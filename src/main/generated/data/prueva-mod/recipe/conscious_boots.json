@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": {
+      "item": "prueva-mod:live_boots"
+    },
+    "L": {
+      "item": "prueva-mod:live_ingot"
+    }
+  },
+  "pattern": [
+    "   ",
+    "L L",
+    "LBL"
+  ],
+  "result": {
+    "count": 1,
+    "id": "prueva-mod:conscious_boots"
+  }
+}

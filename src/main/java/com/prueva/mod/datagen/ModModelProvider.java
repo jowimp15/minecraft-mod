@@ -24,6 +24,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.AZUFRE_STONE4);
         blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.AZUFRE_STONE5);
         blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.AZUFRE_STONE6);
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.AZUFRE_STONE7);
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.LIVE_BLOCK);
 
 //
         Identifier lamspOff = TexturedModel.CUBE_ALL.upload(BlocksMod.LAMPBLOCK, blockStateModelGenerator.modelCollector);
@@ -49,12 +51,22 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(FirstItem.LIVE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(FirstItem.LIVE_HOE, Models.HANDHELD);
         itemModelGenerator.register(FirstItem.LIVE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(FirstItem.RIPPING_HORN, Models.GENERATED);
+        itemModelGenerator.register(FirstItem.CURSED_MEAT, Models.GENERATED);
+        itemModelGenerator.register(FirstItem.DEMONIC_HEART, Models.GENERATED);
+        itemModelGenerator.register(FirstItem.STRONGE_BONE, Models.GENERATED);
+        itemModelGenerator.register(FirstItem.LIVING_HEART, Models.GENERATED);
+        itemModelGenerator.register(FirstItem.ROTTEN_REMAINS, Models.GENERATED);
 
         itemModelGenerator.registerArmor((ArmorItem) FirstItem.LIVE_BOOTS);
         itemModelGenerator.registerArmor((ArmorItem) FirstItem.LIVE_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) FirstItem.LIVE_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) FirstItem.LIVE_HELMET);
 
+        itemModelGenerator.registerArmor((ArmorItem) FirstItem.CONSCIOUS_BOOTS);
+        itemModelGenerator.registerArmor((ArmorItem) FirstItem.CONSCIOUS_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) FirstItem.CONSCIOUS_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) FirstItem.CONSCIOUS_HELMET);
 
     }
 }

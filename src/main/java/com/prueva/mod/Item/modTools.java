@@ -13,7 +13,7 @@ import java.util.function.Supplier;
 public enum modTools implements ToolMaterial {
 //    NETHERITE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 2031, 9.0F, 4.0F, 15, () -> Ingredient.ofItems(Items.NETHERITE_INGOT));
     GALIUM(ModTags.Blocks.INCORRECT_FOR_GALIUM_TOOL, 7000, 10.0f, 6.5f,10, () ->Ingredient.ofItems(FirstItem.GALIUM_INGOT)),
-    LIVE_MATERIAL(ModTags.Blocks.INCORRECT_FOR_LIVE_TOOL, 2277, 11.0f, 6.5f, 10, () ->Ingredient.ofItems(FirstItem.LIVE_INGOT));
+    LIVE_MATERIAL(ModTags.Blocks.INCORRECT_FOR_LIVE_TOOL, 2277, 11.0f, 5.0f, 10, () ->Ingredient.ofItems(FirstItem.LIVE_INGOT));
 
 
     private final TagKey<Block> inverseTag;
