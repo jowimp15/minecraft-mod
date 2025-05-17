@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "prueva-mod:block/thirsty_sapling"
+  }
+}

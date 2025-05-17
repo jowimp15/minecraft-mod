@@ -22,6 +22,10 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(BlocksMod.AZUFRE_STONE4);
         addDrop(BlocksMod.AZUFRE_STONE5);
         addDrop(BlocksMod.LIVE_BLOCK);
+        addDrop(BlocksMod.THIRSTY_LEAVES);
+        addDrop(BlocksMod.THIRSTY_WOOD);
+
+        addDrop(BlocksMod.AZUFRE_STONE8, BlocksMod.AZUFRE_STONE4);
 
         addDrop(BlocksMod.GREEN, oreDrops(BlocksMod.GREEN,FirstItem.ORE_GALIUM));
         addDrop(BlocksMod.AZUFRE_STONE6, oreDrops(BlocksMod.AZUFRE_STONE6,FirstItem.LIVE_ROSE));

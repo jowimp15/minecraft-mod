@@ -27,7 +27,11 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(BlocksMod.AZUFRE_STONE5)
                 .add(BlocksMod.AZUFRE_STONE6)
                 .add(BlocksMod.AZUFRE_STONE7)
+                .add(BlocksMod.AZUFRE_STONE8)
                 .add(BlocksMod.LIVE_BLOCK);
+
+        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
+                .add(BlocksMod.THIRSTY_WOOD);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
 
@@ -47,7 +51,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(BlocksMod.AZUFRE_STONE7)
                 .add(BlocksMod.LIVE_BLOCK);
 
-
         getOrCreateTagBuilder(ModTags.Blocks.TAGS_FUNCTION)
                 .add(BlocksMod.GALIUM_BLOCK)
                 .add(Blocks.DIAMOND_BLOCK)
@@ -55,6 +58,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(Blocks.FURNACE);
 
         getOrCreateTagBuilder(ModTags.Blocks.NEEDS_LIVE_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        getOrCreateTagBuilder(ModTags.Blocks.NEEDS_CONSCIOUS_TOOL)
                 .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
 
         getOrCreateTagBuilder(ModTags.Blocks.INCORRECT_FOR_LIVE_TOOL).addTag(BlockTags.NEEDS_DIAMOND_TOOL);

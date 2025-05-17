@@ -1,0 +1,65 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cursed_meat": {
+      "conditions": {
+        "items": [
+          {
+            "items": "prueva-mod:cursed_meat"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_live_axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "prueva-mod:live_axe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_live_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "prueva-mod:live_pickaxe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_stronge_bone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "prueva-mod:stronge_bone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "prueva-mod:conscious_axe-pickaxe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cursed_meat",
+      "has_live_axe",
+      "has_stronge_bone",
+      "has_live_pickaxe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "prueva-mod:conscious_axe-pickaxe"
+    ]
+  }
+}

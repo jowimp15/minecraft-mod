@@ -2,6 +2,7 @@ package com.prueva.mod.Item;
 
 import com.prueva.mod.Item.custom.ChiselItem;
 import com.prueva.mod.PruevaMod;
+import com.prueva.mod.fluid.FluidRegister;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -19,7 +20,6 @@ public class FirstItem {
     public static final Item CLOTTED_BLOOD = registerItem("clotted_blood", new Item(new Item.Settings()));
     public static final Item CURSED_FANG = registerItem("cursed_fang", new Item(new Item.Settings()));
     public static final Item DEMONIC_CLAWS = registerItem("demonic_claws", new Item(new Item.Settings()));
-
     public static final Item RIPPING_HORN= registerItem("ripping_horn", new Item(new Item.Settings()));
     public static final Item CURSED_MEAT= registerItem("cursed_meat", new Item(new Item.Settings()));
     public static final Item DEMONIC_HEART = registerItem("demonic_heart", new Item(new Item.Settings()));
@@ -27,6 +27,7 @@ public class FirstItem {
     public static final Item LIVING_HEART = registerItem("living_heart", new Item(new Item.Settings()));
     public static final Item ROTTEN_REMAINS = registerItem("rotten_remains", new Item(new Item.Settings()));
 
+    public static final Item BLOOD_BUCKET = registerItem("blood_bucket", new BucketItem(FluidRegister.STILL_FLUID, new Item.Settings().maxCount(1)));
     // CHISEL ITEMS
     public static final Item HECHIZO = registerItem("hechizo", new ChiselItem(new Item.Settings().maxDamage(25)));
 
@@ -37,6 +38,8 @@ public class FirstItem {
     public static final Item LIVE_PICKAXE = registerItem("live_pickaxe", new PickaxeItem(modTools.LIVE_MATERIAL, new Item.Settings().fireproof().attributeModifiers(PickaxeItem.createAttributeModifiers(modTools.LIVE_MATERIAL,  1.1F, -2.8F))));
     public static final Item LIVE_AXE = registerItem("live_axe", new AxeItem(modTools.LIVE_MATERIAL, new Item.Settings().fireproof().attributeModifiers(AxeItem.createAttributeModifiers(modTools.LIVE_MATERIAL,  5.3F, -3.0F))));
     public static final Item LIVE_HOE = registerItem("live_hoe", new HoeItem(modTools.LIVE_MATERIAL, new Item.Settings().fireproof().attributeModifiers(HoeItem.createAttributeModifiers(modTools.LIVE_MATERIAL,  -3.0F, 0.0F))));
+    public static final Item CONSCIOUS_SWORD = registerItem("conscious_sword", new SwordItem(modTools.CONSCIOUS_MATERIAL, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(modTools.CONSCIOUS_MATERIAL,4,-2.6F))));
+    public static final Item CONSCIOUS_AXE_PICKAXE = registerItem("conscious_axe-pickaxe", new SwordItem(modTools.CONSCIOUS_MATERIAL, new Item.Settings().attributeModifiers(PickaxeItem.createAttributeModifiers(modTools.CONSCIOUS_MATERIAL,4,-2.6F))));
 
     // ARMOR
         public static final Item LIVE_HELMET = registerItem(
@@ -59,19 +62,19 @@ public class FirstItem {
 
     public static final Item CONSCIOUS_HELMET = registerItem(
             "conscious_helmet",
-            new ArmorItem(ModArmorMaterial.CONSCIOUS_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(30)))
+            new ArmorItem(ModArmorMaterial.CONSCIOUS_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.HELMET.getMaxDamage(50)))
     );
     public static final Item CONSCIOUS_CHESTPLATE = registerItem(
             "conscious_chestplate",
-            new ArmorItem(ModArmorMaterial.CONSCIOUS_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(30)))
+            new ArmorItem(ModArmorMaterial.CONSCIOUS_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(50)))
     );
     public static final Item CONSCIOUS_LEGGINGS = registerItem(
             "conscious_leggings",
-            new ArmorItem(ModArmorMaterial.CONSCIOUS_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(30)))
+            new ArmorItem(ModArmorMaterial.CONSCIOUS_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(50)))
     );
     public static final Item CONSCIOUS_BOOTS = registerItem(
             "conscious_boots",
-            new ArmorItem(ModArmorMaterial.CONSCIOUS_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(30)))
+            new ArmorItem(ModArmorMaterial.CONSCIOUS_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings().fireproof().maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(50)))
     );
 
     private static Item registerItem(String name, Item item){

@@ -1,24 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "key": {
-    "G": {
-      "item": "minecraft:netherite_scrap"
-    },
-    "I": {
-      "item": "minecraft:gold_ingot"
-    },
-    "O": {
-      "item": "prueva-mod:orb_life"
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "prueva-mod:galium_block"
     }
-  },
-  "pattern": [
-    "GGG",
-    "GOI",
-    "III"
   ],
   "result": {
-    "count": 1,
+    "count": 9,
     "id": "prueva-mod:galium_ingot"
   }
 }

@@ -18,6 +18,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ModTags.Items.TAGS_FUNCTION);
 
+        getOrCreateTagBuilder(ItemTags.SWORDS).add(FirstItem.CONSCIOUS_SWORD);
+        getOrCreateTagBuilder(ItemTags.SWORDS).add(FirstItem.CONSCIOUS_AXE_PICKAXE);
+        getOrCreateTagBuilder(ItemTags.SWORDS).add(FirstItem.GALIUM_SWORD);
         getOrCreateTagBuilder(ItemTags.SWORDS).add(FirstItem.LIVE_SWORD);
         getOrCreateTagBuilder(ItemTags.SHOVELS).add(FirstItem.LIVE_SHOVEL);
         getOrCreateTagBuilder(ItemTags.AXES).add(FirstItem.LIVE_AXE);

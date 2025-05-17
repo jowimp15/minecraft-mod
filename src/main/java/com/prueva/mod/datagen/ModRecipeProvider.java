@@ -12,11 +12,8 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
-
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
-
-import static com.prueva.mod.PotionsRegister.ModPotionRegister.CURSED_BLOOD_BOTTLE;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
     public ModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
@@ -35,6 +32,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .pattern("GGG")
                 .input('G',FirstItem.GALIUM_INGOT)
                 .criterion(hasItem(FirstItem.GALIUM_INGOT), conditionsFromItem(FirstItem.GALIUM_INGOT))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksMod.LIVE_BLOCK)
+                .pattern("GGG")
+                .pattern("GGG")
+                .pattern("GGG")
+                .input('G',FirstItem.LIVE_INGOT)
+                .criterion(hasItem(FirstItem.LIVE_INGOT), conditionsFromItem(FirstItem.LIVE_INGOT))
                 .offerTo(recipeExporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, FirstItem.HECHIZO)
@@ -79,6 +84,18 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(FirstItem.LIVE_ROSE), conditionsFromItem(FirstItem.LIVE_ROSE))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, FirstItem.LIVING_HEART)
+                .pattern(" C ")
+                .pattern("CHC")
+                .pattern(" O ")
+                .input('C', FirstItem.CURSED_MEAT)
+                .criterion(hasItem(FirstItem.CURSED_MEAT), conditionsFromItem(FirstItem.CURSED_MEAT))
+                .input('H', FirstItem.DEMONIC_HEART)
+                .criterion(hasItem(FirstItem.DEMONIC_HEART), conditionsFromItem(FirstItem.DEMONIC_HEART))
+                .input('O', FirstItem.ORB_LIFE)
+                .criterion(hasItem(FirstItem.ORB_LIFE), conditionsFromItem(FirstItem.ORB_LIFE))
+                .offerTo(recipeExporter);
+
         //CONSCIOUS-----
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, FirstItem.CONSCIOUS_HELMET)
@@ -89,7 +106,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(FirstItem.RIPPING_HORN), conditionsFromItem(FirstItem.RIPPING_HORN))
                 .input('A', FirstItem.LIVE_HELMET)
                 .criterion(hasItem(FirstItem.LIVE_HELMET), conditionsFromItem(FirstItem.LIVE_HELMET))
-                .input('L', FirstItem.LIVE_ROSE)
+                .input('L', FirstItem.LIVE_INGOT)
                 .criterion(hasItem(FirstItem.LIVE_INGOT), conditionsFromItem(FirstItem.LIVE_INGOT))
                 .offerTo(recipeExporter);
 
@@ -129,19 +146,37 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(FirstItem.LIVE_INGOT), conditionsFromItem(FirstItem.LIVE_INGOT))
                 .offerTo(recipeExporter);
 
-        // -------------------
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, FirstItem.LIVING_HEART)
-                .pattern(" C ")
-                .pattern("CHC")
-                .pattern(" O ")
-                .input('C', FirstItem.CURSED_MEAT)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, FirstItem.CONSCIOUS_SWORD)
+                .pattern(" LM")
+                .pattern("LSG")
+                .pattern("HG ")
+                .input('M', FirstItem.CURSED_MEAT)
                 .criterion(hasItem(FirstItem.CURSED_MEAT), conditionsFromItem(FirstItem.CURSED_MEAT))
-                .input('H', FirstItem.DEMONIC_HEART)
-                .criterion(hasItem(FirstItem.DEMONIC_HEART), conditionsFromItem(FirstItem.DEMONIC_HEART))
-                .input('O', FirstItem.ORB_LIFE)
-                .criterion(hasItem(FirstItem.ORB_LIFE), conditionsFromItem(FirstItem.ORB_LIFE))
+                .input('S', FirstItem.LIVE_SWORD)
+                .criterion(hasItem(FirstItem.LIVE_SWORD), conditionsFromItem(FirstItem.LIVE_SWORD))
+                .input('L', FirstItem.LIVE_INGOT)
+                .criterion(hasItem(FirstItem.LIVE_INGOT), conditionsFromItem(FirstItem.LIVE_INGOT))
+                .input('H', FirstItem.STRONGE_BONE)
+                .criterion(hasItem(FirstItem.STRONGE_BONE), conditionsFromItem(FirstItem.STRONGE_BONE))
+                .input('G', FirstItem.DEMONIC_CLAWS)
+                .criterion(hasItem(FirstItem.DEMONIC_CLAWS), conditionsFromItem(FirstItem.DEMONIC_CLAWS))
                 .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, FirstItem.CONSCIOUS_AXE_PICKAXE)
+                .pattern("AMP")
+                .pattern(" H ")
+                .pattern(" H ")
+                .input('M', FirstItem.CURSED_MEAT)
+                .criterion(hasItem(FirstItem.CURSED_MEAT), conditionsFromItem(FirstItem.CURSED_MEAT))
+                .input('A', FirstItem.LIVE_AXE)
+                .criterion(hasItem(FirstItem.LIVE_AXE), conditionsFromItem(FirstItem.LIVE_AXE))
+                .input('H', FirstItem.STRONGE_BONE)
+                .criterion(hasItem(FirstItem.STRONGE_BONE), conditionsFromItem(FirstItem.STRONGE_BONE))
+                .input('P', FirstItem.LIVE_PICKAXE)
+                .criterion(hasItem(FirstItem.LIVE_PICKAXE), conditionsFromItem(FirstItem.LIVE_PICKAXE))
+                .offerTo(recipeExporter);
+
+        // -------------------
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, FirstItem.CURSED_MEAT, 1)
                 .input(FirstItem.ROTTEN_REMAINS)
@@ -152,10 +187,17 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.PORKCHOP), conditionsFromItem(Items.PORKCHOP))
                 .offerTo(recipeExporter);
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, FirstItem.GALIUM_INGOT, 9)
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, FirstItem.GALIUM_INGOT, 9)
                 .input(BlocksMod.GALIUM_BLOCK)
                 .criterion(hasItem(BlocksMod.GALIUM_BLOCK), conditionsFromItem(BlocksMod.GALIUM_BLOCK))
                 .offerTo(recipeExporter);
+
+//        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, FirstItem.LIVE_INGOT, 9)
+//                .input(BlocksMod.LIVE_BLOCK)
+//                .criterion(hasItem(BlocksMod.LIVE_BLOCK), conditionsFromItem(BlocksMod.LIVE_BLOCK))
+//                .offerTo(recipeExporter, new Identifier("prueva-mod", "live_ingot_alt"));
+
+
     }
 
 

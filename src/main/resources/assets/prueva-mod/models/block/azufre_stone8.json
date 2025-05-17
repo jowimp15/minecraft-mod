@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "prueva-mod:block/azufre_stone4_top",
+    "side": "prueva-mod:block/azufre_stone8",
+    "top": "prueva-mod:block/azufre_stone8_top"
+  }
+}

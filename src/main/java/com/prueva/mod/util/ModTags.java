@@ -15,14 +15,15 @@ public class ModTags {
         public static final  TagKey<Block> NEEDS_GALIUM_TOOL = createTag("incorrect_galium_tool");
         public static final  TagKey<Block> INCORRECT_FOR_LIVE_TOOL = createTag("incorrect_live_tool");
         public static final  TagKey<Block> NEEDS_LIVE_TOOL = createTag("incorrect_galium_tool");
-
+        public static final  TagKey<Block> INCORRECT_FOR_CONSCIOUS_TOOL = createTag("incorrect_conscious_tool");
+        public static final  TagKey<Block> NEEDS_CONSCIOUS_TOOL = createTag("incorrect_conscious_tool");
 
         private static TagKey<Block> createTag(String name){
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(PruevaMod.MOD_ID, name));
         }
     }
 
-    public static  class Items {
+    public static class Items {
         public static final TagKey<Item> TAGS_FUNCTION = createTag("tags_function_items");
 
         private static TagKey<Item> createTag(String name){

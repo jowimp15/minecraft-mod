@@ -9,11 +9,8 @@ import net.minecraft.component.type.PotionContentsComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.PotionItem;
-import net.minecraft.potion.Potion;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
@@ -27,20 +24,31 @@ public class ModItemGroup {
             FabricItemGroup.builder().icon(() -> new ItemStack(FirstItem.BROKEN_SWORD))
                     .displayName(Text.translatable("itemgroup.prueva-mod.galium_items"))
                     .entries(((displayContext, entries) -> {
+
+                        // blocks
                         entries.add(BlocksMod.GREEN);
-                        entries.add(FirstItem.BROKEN_SWORD);
-                        entries.add(FirstItem.ORE_GALIUM);
-                        entries.add(FirstItem.HECHIZO);
-                        entries.add(FirstItem.GALIUM_INGOT);
                         entries.add(BlocksMod.GALIUM_BLOCK);
                         entries.add(BlocksMod.LAMPBLOCK);
-                        entries.add(FirstItem.GALIUM_SWORD);
                         entries.add(BlocksMod.AZUFRE_STONE);
                         entries.add(BlocksMod.AZUFRE_STONE2);
                         entries.add(BlocksMod.AZUFRE_STONE3);
                         entries.add(BlocksMod.AZUFRE_STONE4);
                         entries.add(BlocksMod.AZUFRE_STONE5);
                         entries.add(BlocksMod.AZUFRE_STONE6);
+                        entries.add(BlocksMod.AZUFRE_STONE7);
+                        entries.add(BlocksMod.AZUFRE_STONE8);
+                        entries.add(BlocksMod.LIVE_BLOCK);
+                        entries.add(BlocksMod.THIRSTY_LEAVES);
+                        entries.add(BlocksMod.THIRSTY_WOOD);
+                        entries.add(BlocksMod.BLOOD_LIQUID);
+                        entries.add(BlocksMod.THIRSTY_SAPLING);
+
+                        // items
+                        entries.add(FirstItem.BROKEN_SWORD);
+                        entries.add(FirstItem.ORE_GALIUM);
+                        entries.add(FirstItem.HECHIZO);
+                        entries.add(FirstItem.GALIUM_INGOT);
+                        entries.add(FirstItem.GALIUM_SWORD);
                         entries.add(FirstItem.LIVE_ROSE);
                         entries.add(FirstItem.LIVE_INGOT);
                         entries.add(FirstItem.ORB_LIFE);
@@ -56,19 +64,18 @@ public class ModItemGroup {
                         entries.add(FirstItem.LIVE_HELMET);
                         entries.add(FirstItem.LIVE_LEGGINGS);
                         entries.add(FirstItem.LIVE_CHESTPLATE);
-                        entries.add(BlocksMod.AZUFRE_STONE7);
-                        entries.add(BlocksMod.LIVE_BLOCK);
                         entries.add(FirstItem.CONSCIOUS_BOOTS);
                         entries.add(FirstItem.CONSCIOUS_CHESTPLATE);
                         entries.add(FirstItem.CONSCIOUS_HELMET);
                         entries.add(FirstItem.CONSCIOUS_LEGGINGS);
+                        entries.add(FirstItem.CONSCIOUS_SWORD);
+                        entries.add(FirstItem.CONSCIOUS_AXE_PICKAXE);
                         entries.add(FirstItem.RIPPING_HORN);
                         entries.add(FirstItem.CURSED_MEAT);
                         entries.add(FirstItem.DEMONIC_HEART);
                         entries.add(FirstItem.STRONGE_BONE);
                         entries.add(FirstItem.LIVING_HEART);
                         entries.add(FirstItem.ROTTEN_REMAINS);
-
                     }))
 
                     .build());

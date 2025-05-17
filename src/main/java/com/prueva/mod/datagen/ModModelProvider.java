@@ -25,13 +25,20 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.AZUFRE_STONE5);
         blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.AZUFRE_STONE6);
         blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.AZUFRE_STONE7);
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.AZUFRE_STONE8);
         blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.LIVE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.THIRSTY_LEAVES);
 
-//
+        blockStateModelGenerator.registerTintableCrossBlockState(BlocksMod.THIRSTY_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+//      blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.BLOOD_LIQUID);
+
+
         Identifier lamspOff = TexturedModel.CUBE_ALL.upload(BlocksMod.LAMPBLOCK, blockStateModelGenerator.modelCollector);
         Identifier lampOn = blockStateModelGenerator.createSubModel(BlocksMod.LAMPBLOCK, "_on", Models.CUBE_ALL, TextureMap::all);
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(BlocksMod.LAMPBLOCK)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(LampBlock.CLICKED, lampOn, lamspOff)));
+
+        blockStateModelGenerator.registerLog(BlocksMod.THIRSTY_WOOD).log(BlocksMod.THIRSTY_WOOD);
     }
 
     @Override
@@ -51,6 +58,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(FirstItem.LIVE_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(FirstItem.LIVE_HOE, Models.HANDHELD);
         itemModelGenerator.register(FirstItem.LIVE_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(FirstItem.CONSCIOUS_SWORD, Models.HANDHELD);
+        itemModelGenerator.register(FirstItem.CONSCIOUS_AXE_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(FirstItem.RIPPING_HORN, Models.GENERATED);
         itemModelGenerator.register(FirstItem.CURSED_MEAT, Models.GENERATED);
         itemModelGenerator.register(FirstItem.DEMONIC_HEART, Models.GENERATED);
@@ -68,5 +77,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) FirstItem.CONSCIOUS_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) FirstItem.CONSCIOUS_HELMET);
 
+        itemModelGenerator.register(BlocksMod.THIRSTY_SAPLING.asItem(), Models.GENERATED);
     }
 }

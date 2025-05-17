@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "prueva-mod:live_axe"
+    },
+    "H": {
+      "item": "prueva-mod:stronge_bone"
+    },
+    "M": {
+      "item": "prueva-mod:cursed_meat"
+    },
+    "P": {
+      "item": "prueva-mod:live_pickaxe"
+    }
+  },
+  "pattern": [
+    "AMP",
+    " H ",
+    " H "
+  ],
+  "result": {
+    "count": 1,
+    "id": "prueva-mod:conscious_axe-pickaxe"
+  }
+}

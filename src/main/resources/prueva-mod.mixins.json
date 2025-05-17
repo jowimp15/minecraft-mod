@@ -3,7 +3,9 @@
 	"package": "com.prueva.mod.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"WhenTakeDamageMixin"
+
 	],
 	"injectors": {
 		"defaultRequire": 1

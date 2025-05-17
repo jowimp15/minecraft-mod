@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "size": 10,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "prueva-mod:blood_dimension_replaceable_flower"
+        },
+        "state": {
+          "Name": "prueva-mod:azufre_stone6"
+        }
+      }
+    ]
+  }
+}
