@@ -1,8 +1,12 @@
 {
-  "replace": true,
+  "replace": false,
   "values": [
-    "prueva-mod:azufre_stone4",
-    "prueva-mod:azufre_stone8",
-    "prueva-mod:azufre_stone3"
+    "prueva-mod:clotted_stone",
+    "prueva-mod:dry_bloody_rocks",
+    "prueva-mod:dry_rooted_bloody_rocks",
+    "prueva-mod:flowering_roots",
+    "prueva-mod:stacked_rotten_remains",
+    "prueva-mod:thirsty_grass",
+    "prueva-mod:bloody_rocks"
   ]
 }

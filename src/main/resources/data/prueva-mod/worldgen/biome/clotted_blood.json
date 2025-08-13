@@ -1,0 +1,46 @@
+{
+  "carvers": {
+    "air": [
+      "prueva-mod:blood_dimension_cave"
+    ]
+  },
+  "downfall": 0,
+  "temperature": 1,
+  "has_precipitation": false,
+  "effects": {
+    "fog_color": 2031616,
+    "water_color": 8388608,
+    "water_fog_color": 6356992,
+    "sky_color": 3997696,
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2,
+      "sound": "minecraft:ambient.nether_wastes.loop",
+      "tick_delay": 6000
+    }
+  },
+  "features": [
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    [],
+    []
+  ],
+  "spawn_costs": {},
+  "spawners": {
+    "ambient": [],
+    "axolotls": [],
+    "creature": [],
+    "misc": [],
+    "monster": [],
+    "underground_water_creature": [],
+    "water_ambient": [],
+    "water_creature": []
+  }
+}

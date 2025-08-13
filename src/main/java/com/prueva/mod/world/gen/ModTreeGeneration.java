@@ -9,7 +9,7 @@ import net.minecraft.world.gen.GenerationStep;
 
 public class ModTreeGeneration {
     public static void generateTrees(){
-        BiomeModifications.addFeature(BiomeSelectors.includeByKey(ModThirstyBiome.THIRSTY_BIOME_KEY),
-                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeature.THIRSTY_WOOD_PLACED_KEY);
+//        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.PLAINS),
+//                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeature.THIRSTY_WOOD_PLACED_KEY);
     }
 }

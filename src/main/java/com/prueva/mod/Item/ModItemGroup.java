@@ -1,22 +1,14 @@
 package com.prueva.mod.Item;
 
-import com.prueva.mod.PotionsRegister.ModPotionRegister;
 import com.prueva.mod.PruevaMod;
 import com.prueva.mod.block.BlocksMod;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.minecraft.component.DataComponentTypes;
-import net.minecraft.component.type.PotionContentsComponent;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-
-import java.util.Optional;
-
-import static com.prueva.mod.PotionsRegister.ModPotionRegister.CURSED_BLOOD_BOTTLE;
 
 public class ModItemGroup {
 
@@ -29,14 +21,14 @@ public class ModItemGroup {
                         entries.add(BlocksMod.GREEN);
                         entries.add(BlocksMod.GALIUM_BLOCK);
                         entries.add(BlocksMod.LAMPBLOCK);
-                        entries.add(BlocksMod.AZUFRE_STONE);
-                        entries.add(BlocksMod.AZUFRE_STONE2);
-                        entries.add(BlocksMod.AZUFRE_STONE3);
-                        entries.add(BlocksMod.AZUFRE_STONE4);
-                        entries.add(BlocksMod.AZUFRE_STONE5);
-                        entries.add(BlocksMod.AZUFRE_STONE6);
-                        entries.add(BlocksMod.AZUFRE_STONE7);
-                        entries.add(BlocksMod.AZUFRE_STONE8);
+                        entries.add(BlocksMod.CRIMSON_VEINSTONE);
+                        entries.add(BlocksMod.CLOTTED_STONE);
+                        entries.add(BlocksMod.BLOODY_ROCKS);
+                        entries.add(BlocksMod.DRY_BLOODY_ROCKS);
+                        entries.add(BlocksMod.DRY_ROOTED_BLOODY_ROCKS);
+                        entries.add(BlocksMod.FLOWERING_ROOTS);
+                        entries.add(BlocksMod.STACKED_ROTTEN_REMAINS);
+                        entries.add(BlocksMod.THIRSTY_GRASS);
                         entries.add(BlocksMod.LIVE_BLOCK);
                         entries.add(BlocksMod.THIRSTY_LEAVES);
                         entries.add(BlocksMod.THIRSTY_WOOD);

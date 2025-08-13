@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:huge_fungus",
+  "config": {
+    "hat_state": {
+      "Name": "prueva-mod:thirsty_leaves"
+    },
+    "decor_state": {
+      "Name": "prueva-mod:thirsty_leaves"
+    },
+    "planted": false,
+    "replaceable_blocks": {
+      "type": "minecraft:matching_blocks",
+      "blocks": []
+    },
+    "stem_state": {
+      "Name": "prueva-mod:thirsty_wood",
+      "Properties": {
+        "axis": "y"
+      }
+    },
+    "valid_base_block": {
+      "Name": "prueva-mod:thirsty_grass"
+    }
+  }
+}

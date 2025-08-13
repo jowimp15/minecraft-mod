@@ -1,7 +1,7 @@
 {
   "type": "minecraft:ore",
   "config": {
-    "size": 10,
+    "size": 3,
     "discard_chance_on_air_exposure": 0,
     "targets": [
       {
@@ -10,7 +10,7 @@
           "tag": "prueva-mod:blood_dimension_replaceable_flower"
         },
         "state": {
-          "Name": "prueva-mod:azufre_stone6"
+          "Name": "prueva-mod:flowering_roots"
         }
       }
     ]

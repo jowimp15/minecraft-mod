@@ -14,7 +14,6 @@ import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
-import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 import java.util.List;
@@ -32,12 +31,12 @@ public class ModConfiguredFeatures {
 
         register(context, THIRSTY_WOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
                 BlockStateProvider.of(BlocksMod.THIRSTY_WOOD),
-                new ForkingTrunkPlacer(2, 2, 2),
+                new StraightTrunkPlacer(4, 2, 0),
 
                 BlockStateProvider.of(BlocksMod.THIRSTY_LEAVES),
                         new BlobFoliagePlacer(ConstantIntProvider.create(1), ConstantIntProvider.create(0), 1),
 
-                new TwoLayersFeatureSize(1,0,2)).build());
+                new TwoLayersFeatureSize(1,0,2)).dirtProvider(BlockStateProvider.of(BlocksMod.DRY_BLOODY_ROCKS)).build());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name){

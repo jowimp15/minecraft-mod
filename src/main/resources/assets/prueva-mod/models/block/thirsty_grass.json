@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "prueva-mod:block/dry_bloody_rocks_top",
+    "side": "prueva-mod:block/thirsty_grass",
+    "top": "prueva-mod:block/thirsty_grass_top"
+  }
+}

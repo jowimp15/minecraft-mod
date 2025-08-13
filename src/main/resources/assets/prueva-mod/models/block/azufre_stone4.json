@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "prueva-mod:block/azufre_stone4_top",
-    "side": "prueva-mod:block/azufre_stone4"
-  }
-}

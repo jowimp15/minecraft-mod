@@ -1,13 +1,23 @@
 {
-  "carvers": {},
-  "downfall": 0.0,
+  "carvers": {
+    "air": [
+      "prueva-mod:blood_dimension_cave_thirsty_biome"
+    ]
+  },
+  "downfall": 0,
+  "temperature": 1,
+  "has_precipitation": false,
   "effects": {
-    "fog_color": 16124873,
-    "foliage_color": 16747776,
-    "grass_color": 12517376,
-    "sky_color": 16124873,
-    "water_color": 9175040,
-    "water_fog_color": 6750208
+    "fog_color": 16711782,
+    "water_color": 16341144,
+    "water_fog_color": 15073379,
+    "sky_color": 15728792,
+    "mood_sound": {
+      "block_search_extent": 8,
+      "offset": 2,
+      "sound": "minecraft:ambient.nether_wastes.loop",
+      "tick_delay": 6000
+    }
   },
   "features": [
     [],
@@ -15,15 +25,17 @@
     [],
     [],
     [],
-    [],
-    [],
+    [
+      "prueva-mod:ramas_prueva",
+      "prueva-mod:blood_flower"
+    ],
     [],
     [],
     [
-      "prueva-mod:thirsty_wood_placed"
-    ]
+      "prueva-mod:thirsty_woods_placed"
+    ],
+    []
   ],
-  "has_precipitation": false,
   "spawn_costs": {},
   "spawners": {
     "ambient": [],
@@ -34,10 +46,5 @@
     "underground_water_creature": [],
     "water_ambient": [],
     "water_creature": []
-  },
-  "temperature": 2.0,
-  "biome_tags": [
-    "minecraft:overworld"
-  ]
-
+  }
 }

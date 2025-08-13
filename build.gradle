@@ -98,3 +98,7 @@ tasks.register("datagen", JavaExec) {
 	workingDir = file("build/datagen")
 	args = ["--all"]
 }
+
+tasks.withType(Jar).configureEach {
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "prueva-mod:block/stacked_rotten_remains_top",
+    "side": "prueva-mod:block/stacked_rotten_remains"
+  }
+}

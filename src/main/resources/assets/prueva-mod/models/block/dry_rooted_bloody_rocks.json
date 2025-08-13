@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "prueva-mod:block/dry_rooted_bloody_rocks_top",
+    "side": "prueva-mod:block/dry_rooted_bloody_rocks"
+  }
+}

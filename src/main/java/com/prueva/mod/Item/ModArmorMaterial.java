@@ -36,7 +36,7 @@ public class ModArmorMaterial {
                 map.put(ArmorItem.Type.HELMET, 5);
                 map.put(ArmorItem.Type.BODY, 11);
             }), 10, SoundEvents.ITEM_ARMOR_EQUIP_LEATHER, () -> Ingredient.ofItems(FirstItem.LIVE_INGOT),
-                    List.of(new ArmorMaterial.Layer(Identifier.of(PruevaMod.MOD_ID, "conscious_armor"))), 0f, 0f
+                    List.of(new ArmorMaterial.Layer(Identifier.of(PruevaMod.MOD_ID, "conscious_armor"))), 4.0f, 0f
             ));
 
 

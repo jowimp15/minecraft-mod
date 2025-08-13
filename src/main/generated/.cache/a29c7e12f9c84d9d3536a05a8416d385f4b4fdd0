@@ -1,10 +1,10 @@
-// 1.21	2024-12-19T20:26:30.3287426	prueva mod/Tags for minecraft:block
+// 1.21	2025-05-17T17:06:28.3647656	prueva mod/Tags for minecraft:block
 22adedbd5f22afbc9a6299de82353e127972ca3f data\prueva-mod\tags\block\tags_function_blocks.json
-ba14ad9ab375f40fef2b8c5b23171fe33263a883 data\prueva-mod\tags\block\incorrect_galium_tool.json
-a249c46329a41538f49a564e1f14338aaf1be5a0 data\prueva-mod\tags\block\incorrect_conscious_tool.json
 7c8e192804c174186c53abd560d2a329e7b74341 data\minecraft\tags\block\needs_stone_tool.json
-ca61649e2b356b6a56eb4bc1578696902cc15f94 data\minecraft\tags\block\needs_iron_tool.json
+a249c46329a41538f49a564e1f14338aaf1be5a0 data\prueva-mod\tags\block\incorrect_conscious_tool.json
+ba14ad9ab375f40fef2b8c5b23171fe33263a883 data\prueva-mod\tags\block\incorrect_galium_tool.json
 69b01f4544162f0d3a9d9be8f312b2afff19c1a0 data\minecraft\tags\block\mineable\pickaxe.json
+ca61649e2b356b6a56eb4bc1578696902cc15f94 data\minecraft\tags\block\needs_iron_tool.json
 2b68819e254b06c1ec26084d517c7b40a1ef9028 data\minecraft\tags\block\mineable\axe.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\block\needs_diamond_tool.json
 a249c46329a41538f49a564e1f14338aaf1be5a0 data\prueva-mod\tags\block\incorrect_live_tool.json

@@ -16,19 +16,19 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(BlocksMod.GALIUM_BLOCK);
-        addDrop(BlocksMod.AZUFRE_STONE);
-        addDrop(BlocksMod.AZUFRE_STONE2);
-        addDrop(BlocksMod.AZUFRE_STONE3);
-        addDrop(BlocksMod.AZUFRE_STONE4);
-        addDrop(BlocksMod.AZUFRE_STONE5);
+        addDrop(BlocksMod.CRIMSON_VEINSTONE);
+        addDrop(BlocksMod.CLOTTED_STONE);
+        addDrop(BlocksMod.BLOODY_ROCKS);
+        addDrop(BlocksMod.DRY_BLOODY_ROCKS);
         addDrop(BlocksMod.LIVE_BLOCK);
         addDrop(BlocksMod.THIRSTY_LEAVES);
         addDrop(BlocksMod.THIRSTY_WOOD);
 
-        addDrop(BlocksMod.AZUFRE_STONE8, BlocksMod.AZUFRE_STONE4);
+        addDrop(BlocksMod.DRY_ROOTED_BLOODY_ROCKS, BlocksMod.DRY_BLOODY_ROCKS);
+        addDrop(BlocksMod.THIRSTY_GRASS, BlocksMod.DRY_BLOODY_ROCKS);
 
         addDrop(BlocksMod.GREEN, oreDrops(BlocksMod.GREEN,FirstItem.ORE_GALIUM));
-        addDrop(BlocksMod.AZUFRE_STONE6, oreDrops(BlocksMod.AZUFRE_STONE6,FirstItem.LIVE_ROSE));
-        addDrop(BlocksMod.AZUFRE_STONE7, oreDrops(BlocksMod.AZUFRE_STONE7,FirstItem.ROTTEN_REMAINS));
+        addDrop(BlocksMod.FLOWERING_ROOTS, oreDrops(BlocksMod.FLOWERING_ROOTS,FirstItem.LIVE_ROSE));
+        addDrop(BlocksMod.STACKED_ROTTEN_REMAINS, oreDrops(BlocksMod.STACKED_ROTTEN_REMAINS,FirstItem.ROTTEN_REMAINS));
     }
 }

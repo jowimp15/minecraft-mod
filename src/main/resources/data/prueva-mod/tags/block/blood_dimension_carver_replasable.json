@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "prueva-mod:crimson_veinstone",
+    "prueva-mod:clotted_stone",
+    "prueva-mod:bloody_rocks",
+    "prueva-mod:dry_bloody_rocks",
+    "prueva-mod:dry_rooted_bloody_rocks",
+    "prueva-mod:thirsty_grass"
+  ]
+}

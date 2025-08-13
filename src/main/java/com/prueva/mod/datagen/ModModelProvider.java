@@ -18,14 +18,14 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.GREEN);
         blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.GALIUM_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.AZUFRE_STONE);
-        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.AZUFRE_STONE2);
-        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.AZUFRE_STONE3);
-        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.AZUFRE_STONE4);
-        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.AZUFRE_STONE5);
-        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.AZUFRE_STONE6);
-        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.AZUFRE_STONE7);
-        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.AZUFRE_STONE8);
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.CRIMSON_VEINSTONE);
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.CLOTTED_STONE);
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.BLOODY_ROCKS);
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.DRY_BLOODY_ROCKS);
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.DRY_ROOTED_BLOODY_ROCKS);
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.FLOWERING_ROOTS);
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.STACKED_ROTTEN_REMAINS);
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.THIRSTY_GRASS);
         blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.LIVE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.THIRSTY_LEAVES);
 

@@ -20,7 +20,7 @@ import java.util.List;
 
 public class ModPlacedFeature {
     public static final RegistryKey<PlacedFeature> GALIUM_ORE_PLACED_KEY = registerKey("galium_ore_placed");
-    public static final RegistryKey<PlacedFeature> THIRSTY_WOOD_PLACED_KEY = registerKey("thirsty_wood_placed");
+    public static final RegistryKey<PlacedFeature> THIRSTY_WOOD_PLACED_KEY = registerKey("thirsty_woods_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);

@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "prueva-mod:azufre_stone3",
-    "prueva-mod:azufre_stone4",
-    "prueva-mod:azufre_stone8"
+    "prueva-mod:bloody_rocks",
+    "prueva-mod:dry_bloody_rocks",
+    "prueva-mod:thirsty_grass"
   ]
 }
