@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "prueva-mod:block/thirsty_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "prueva-mod:block/thirsty_wood"
+    },
+    "axis=z": {
+      "model": "prueva-mod:block/thirsty_wood_horizontal",
+      "x": 90
+    }
+  }
+}

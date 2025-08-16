@@ -1,0 +1,76 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cursed_meat": {
+      "conditions": {
+        "items": [
+          {
+            "items": "prueva-mod:cursed_meat"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_demonic_claws": {
+      "conditions": {
+        "items": [
+          {
+            "items": "prueva-mod:demonic_claws"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_live_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "prueva-mod:live_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_live_sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": "prueva-mod:live_sword"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_stronge_bone": {
+      "conditions": {
+        "items": [
+          {
+            "items": "prueva-mod:stronge_bone"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "prueva-mod:conscious_sword"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cursed_meat",
+      "has_live_sword",
+      "has_live_ingot",
+      "has_stronge_bone",
+      "has_demonic_claws"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "prueva-mod:conscious_sword"
+    ]
+  }
+}

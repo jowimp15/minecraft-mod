@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "G": {
+      "item": "prueva-mod:demonic_claws"
+    },
+    "H": {
+      "item": "prueva-mod:stronge_bone"
+    },
+    "L": {
+      "item": "prueva-mod:live_ingot"
+    },
+    "M": {
+      "item": "prueva-mod:cursed_meat"
+    },
+    "S": {
+      "item": "prueva-mod:live_sword"
+    }
+  },
+  "pattern": [
+    " LM",
+    "LSG",
+    "HG "
+  ],
+  "result": {
+    "count": 1,
+    "id": "prueva-mod:conscious_sword"
+  }
+}

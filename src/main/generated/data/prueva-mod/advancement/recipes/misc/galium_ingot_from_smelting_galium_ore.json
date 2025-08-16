@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_galium_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "prueva-mod:galium_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:galium_ingot_from_smelting_galium_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_galium_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:galium_ingot_from_smelting_galium_ore"
+    ]
+  }
+}
