@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "prueva-mod:thirsty_wood"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "prueva-mod:thirsty_planks"
+  }
+}

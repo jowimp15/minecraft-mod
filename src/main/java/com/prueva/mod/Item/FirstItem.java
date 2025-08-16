@@ -12,7 +12,7 @@ public class FirstItem {
 
     // NOLMAL ITEMS
     public static final Item BROKEN_SWORD = registerItem("broken_sword", new Item(new Item.Settings()));
-    public static final Item ORE_GALIUM = registerItem("ore_galium", new Item(new Item.Settings()));
+    public static final Item RAW_GALIUM = registerItem("raw_galium", new Item(new Item.Settings()));
     public static final Item GALIUM_INGOT = registerItem("galium_ingot", new Item(new Item.Settings()));
     public static final Item LIVE_ROSE = registerItem("live_rose", new Item(new Item.Settings()));
     public static final Item LIVE_INGOT = registerItem("live_ingot", new Item(new Item.Settings()));

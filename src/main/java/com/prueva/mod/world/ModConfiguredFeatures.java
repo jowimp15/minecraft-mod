@@ -25,12 +25,12 @@ public class ModConfiguredFeatures {
 
     public static void bootstrap(Registerable<ConfiguredFeature<?,?>> context){
         RuleTest stoneRepaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
-        List<OreFeatureConfig.Target> overworldGaliumOre = List.of(OreFeatureConfig.createTarget(stoneRepaceables, BlocksMod.GREEN.getDefaultState()));
+        List<OreFeatureConfig.Target> overworldGaliumOre = List.of(OreFeatureConfig.createTarget(stoneRepaceables, BlocksMod.GALIUM_ORE.getDefaultState()));
 
         register(context, GALIUM_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldGaliumOre, 12));
 
         register(context, THIRSTY_WOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
-                BlockStateProvider.of(BlocksMod.THIRSTY_WOOD),
+                BlockStateProvider.of(BlocksMod.THIRSTY_LOG),
                 new StraightTrunkPlacer(4, 2, 0),
 
                 BlockStateProvider.of(BlocksMod.THIRSTY_LEAVES),

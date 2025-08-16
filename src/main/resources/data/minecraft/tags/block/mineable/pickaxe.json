@@ -1,7 +1,7 @@
 {
   "values": [
     "prueva-mod:galium_block",
-    "prueva-mod:green",
+    "prueva-mod:galium_ore",
     "prueva-mod:crimson_veinstone",
     "prueva-mod:clotted_stone",
     "prueva-mod:bloody_rocks",
@@ -10,6 +10,9 @@
     "prueva-mod:flowering_roots",
     "prueva-mod:stacked_rotten_remains",
     "prueva-mod:thirsty_grass",
+    "prueva-mod:bloody_rocks_bricks",
+    "prueva-mod:clotted_stone_bricks",
+    "prueva-mod:dry_bloody_rocks_bricks",
     "prueva-mod:live_block"
   ]
 }

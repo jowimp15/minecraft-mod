@@ -18,7 +18,7 @@ public class ModItemGroup {
                     .entries(((displayContext, entries) -> {
 
                         // blocks
-                        entries.add(BlocksMod.GREEN);
+                        entries.add(BlocksMod.GALIUM_ORE);
                         entries.add(BlocksMod.GALIUM_BLOCK);
                         entries.add(BlocksMod.LAMPBLOCK);
                         entries.add(BlocksMod.CRIMSON_VEINSTONE);
@@ -31,13 +31,26 @@ public class ModItemGroup {
                         entries.add(BlocksMod.THIRSTY_GRASS);
                         entries.add(BlocksMod.LIVE_BLOCK);
                         entries.add(BlocksMod.THIRSTY_LEAVES);
-                        entries.add(BlocksMod.THIRSTY_WOOD);
+                        entries.add(BlocksMod.THIRSTY_LOG);
                         entries.add(BlocksMod.BLOOD_LIQUID);
                         entries.add(BlocksMod.THIRSTY_SAPLING);
+                        entries.add(BlocksMod.BLOODY_ROCKS_BRICKS);
+                        entries.add(BlocksMod.DRY_BLOODY_ROCKS_BRICKS);
+                        entries.add(BlocksMod.CLOTTED_STONE_BRICKS);
+                        entries.add(BlocksMod.THIRSTY_PLANKS);
+                        entries.add(BlocksMod.THIRSTY_STAIRS);
+                        entries.add(BlocksMod.THIRSTY_SLAB);
+                        entries.add(BlocksMod.THIRSTY_FENCE);
+                        entries.add(BlocksMod.THIRSTY_FENCE_GATE);
+                        entries.add(BlocksMod.THIRSTY_DOOR);
+                        entries.add(BlocksMod.THIRSTY_TRAPDOOR);
+                        entries.add(BlocksMod.THIRSTY_PRESSURE_PLATE);
+                        entries.add(BlocksMod.THIRSTY_BUTTON);
+
 
                         // items
                         entries.add(FirstItem.BROKEN_SWORD);
-                        entries.add(FirstItem.ORE_GALIUM);
+                        entries.add(FirstItem.RAW_GALIUM);
                         entries.add(FirstItem.HECHIZO);
                         entries.add(FirstItem.GALIUM_INGOT);
                         entries.add(FirstItem.GALIUM_SWORD);

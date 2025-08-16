@@ -10,6 +10,7 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
 
 import net.minecraft.item.Items;
+import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import java.util.List;
@@ -22,10 +23,11 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter recipeExporter) {
-        List<ItemConvertible> GALIUM_INGOT = List.of(FirstItem.ORE_GALIUM);
+        List<ItemConvertible> GALIUM_SEMLTABLES = List.of(FirstItem.RAW_GALIUM, BlocksMod.GALIUM_ORE);
 
-        offerSmelting(recipeExporter, GALIUM_INGOT, RecipeCategory.MISC, FirstItem.GALIUM_INGOT, 1, 200, "galium_ingot");
+        offerSmelting(recipeExporter, GALIUM_SEMLTABLES, RecipeCategory.MISC, FirstItem.GALIUM_INGOT, 1, 200, "galium_ingot" );
 
+        // BUILDING BLOCKS ------------------------
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksMod.GALIUM_BLOCK)
                 .pattern("GGG")
                 .pattern("GGG")
@@ -42,6 +44,74 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(FirstItem.LIVE_INGOT), conditionsFromItem(FirstItem.LIVE_INGOT))
                 .offerTo(recipeExporter);
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksMod.CLOTTED_STONE_BRICKS, 2)
+                .pattern("RS ")
+                .pattern("SR ")
+                .pattern("   ")
+                .input('R',FirstItem.ROTTEN_REMAINS)
+                .criterion(hasItem(FirstItem.ROTTEN_REMAINS), conditionsFromItem(FirstItem.ROTTEN_REMAINS))
+                .input('S',BlocksMod.CLOTTED_STONE)
+                .criterion(hasItem(BlocksMod.CLOTTED_STONE), conditionsFromItem(BlocksMod.CLOTTED_STONE))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksMod.BLOODY_ROCKS_BRICKS, 2)
+                .pattern("RS ")
+                .pattern("SR ")
+                .pattern("   ")
+                .input('R',FirstItem.ROTTEN_REMAINS)
+                .criterion(hasItem(FirstItem.ROTTEN_REMAINS), conditionsFromItem(FirstItem.ROTTEN_REMAINS))
+                .input('S',BlocksMod.BLOODY_ROCKS)
+                .criterion(hasItem(BlocksMod.BLOODY_ROCKS), conditionsFromItem(BlocksMod.BLOODY_ROCKS))
+                .offerTo(recipeExporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksMod.DRY_BLOODY_ROCKS_BRICKS, 2)
+                .pattern("RS ")
+                .pattern("SR ")
+                .pattern("   ")
+                .input('R',FirstItem.ROTTEN_REMAINS)
+                .criterion(hasItem(FirstItem.ROTTEN_REMAINS), conditionsFromItem(FirstItem.ROTTEN_REMAINS))
+                .input('S',BlocksMod.DRY_BLOODY_ROCKS)
+                .criterion(hasItem(BlocksMod.DRY_BLOODY_ROCKS), conditionsFromItem(BlocksMod.DRY_BLOODY_ROCKS))
+                .offerTo(recipeExporter);
+
+        // SETS -----------------
+
+        createDoorRecipe(BlocksMod.THIRSTY_DOOR, Ingredient.ofItems(BlocksMod.THIRSTY_PLANKS))
+                .criterion(hasItem(BlocksMod.THIRSTY_PLANKS), conditionsFromItem(BlocksMod.THIRSTY_PLANKS))
+                .offerTo(recipeExporter);
+
+        createTrapdoorRecipe(BlocksMod.THIRSTY_TRAPDOOR, Ingredient.ofItems(BlocksMod.THIRSTY_PLANKS))
+                .criterion(hasItem(BlocksMod.THIRSTY_PLANKS), conditionsFromItem(BlocksMod.THIRSTY_PLANKS))
+                .offerTo(recipeExporter);
+
+        createStairsRecipe(BlocksMod.THIRSTY_STAIRS, Ingredient.ofItems(BlocksMod.THIRSTY_PLANKS))
+                .criterion(hasItem(BlocksMod.THIRSTY_PLANKS), conditionsFromItem(BlocksMod.THIRSTY_PLANKS))
+                .offerTo(recipeExporter);
+
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS ,BlocksMod.THIRSTY_SLAB, Ingredient.ofItems(BlocksMod.THIRSTY_PLANKS))
+                .criterion(hasItem(BlocksMod.THIRSTY_PLANKS), conditionsFromItem(BlocksMod.THIRSTY_PLANKS))
+                .offerTo(recipeExporter);
+
+        createFenceRecipe(BlocksMod.THIRSTY_FENCE, Ingredient.ofItems(BlocksMod.THIRSTY_PLANKS))
+                .criterion(hasItem(BlocksMod.THIRSTY_PLANKS), conditionsFromItem(BlocksMod.THIRSTY_PLANKS))
+                .offerTo(recipeExporter);
+
+        createPressurePlateRecipe(RecipeCategory.BUILDING_BLOCKS, BlocksMod.THIRSTY_PRESSURE_PLATE, Ingredient.ofItems(BlocksMod.THIRSTY_PLANKS))
+                .criterion(hasItem(BlocksMod.THIRSTY_PLANKS), conditionsFromItem(BlocksMod.THIRSTY_PLANKS))
+                .offerTo(recipeExporter);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, BlocksMod.THIRSTY_BUTTON)
+                .input(BlocksMod.THIRSTY_PLANKS)
+                .criterion(hasItem(BlocksMod.THIRSTY_PLANKS), conditionsFromItem(BlocksMod.THIRSTY_PLANKS))
+                .offerTo(recipeExporter);
+        // -----------------------------
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, BlocksMod.THIRSTY_PLANKS, 4)
+                .input(BlocksMod.THIRSTY_LOG)
+                .criterion(hasItem(BlocksMod.THIRSTY_LOG), conditionsFromItem(BlocksMod.THIRSTY_LOG))
+                .offerTo(recipeExporter);
+
+        // MISC ------------------------------
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, FirstItem.HECHIZO)
                 .pattern(" D ")
                 .pattern(" B ")
@@ -50,16 +120,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.DIAMOND_BLOCK), conditionsFromItem(Items.DIAMOND_BLOCK))
                 .input('B', Items.BLAZE_ROD)
                 .criterion(hasItem(Items.BLAZE_ROD), conditionsFromItem(Items.BLAZE_ROD))
-                .offerTo(recipeExporter);
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, FirstItem.GALIUM_SWORD)
-                .pattern(" G ")
-                .pattern(" G ")
-                .pattern(" S ")
-                .input('S', Items.GOLD_INGOT)
-                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
-                .input('G', FirstItem.GALIUM_INGOT)
-                .criterion(hasItem(FirstItem.GALIUM_INGOT), conditionsFromItem(FirstItem.GALIUM_INGOT))
                 .offerTo(recipeExporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, FirstItem.LIVE_INGOT)
@@ -96,7 +156,29 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(FirstItem.ORB_LIFE), conditionsFromItem(FirstItem.ORB_LIFE))
                 .offerTo(recipeExporter);
 
-        //CONSCIOUS-----
+        // -------------------
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, FirstItem.CURSED_MEAT, 1)
+                .input(FirstItem.ROTTEN_REMAINS)
+                .criterion(hasItem(FirstItem.ROTTEN_REMAINS), conditionsFromItem(FirstItem.ROTTEN_REMAINS))
+                .input(FirstItem.CLOTTED_BLOOD)
+                .criterion(hasItem(FirstItem.CLOTTED_BLOOD), conditionsFromItem(FirstItem.CLOTTED_BLOOD))
+                .input(Items.PORKCHOP)
+                .criterion(hasItem(Items.PORKCHOP), conditionsFromItem(Items.PORKCHOP))
+                .offerTo(recipeExporter);
+
+
+        // COMBAT ----------------------
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, FirstItem.GALIUM_SWORD)
+                .pattern(" G ")
+                .pattern(" G ")
+                .pattern(" S ")
+                .input('S', Items.GOLD_INGOT)
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .input('G', FirstItem.GALIUM_INGOT)
+                .criterion(hasItem(FirstItem.GALIUM_INGOT), conditionsFromItem(FirstItem.GALIUM_INGOT))
+                .offerTo(recipeExporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, FirstItem.CONSCIOUS_HELMET)
                 .pattern("CAC")
@@ -162,6 +244,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(FirstItem.DEMONIC_CLAWS), conditionsFromItem(FirstItem.DEMONIC_CLAWS))
                 .offerTo(recipeExporter);
 
+        // TOOLS ------------------
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, FirstItem.CONSCIOUS_AXE_PICKAXE)
                 .pattern("AMP")
                 .pattern(" H ")
@@ -176,21 +260,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(FirstItem.LIVE_PICKAXE), conditionsFromItem(FirstItem.LIVE_PICKAXE))
                 .offerTo(recipeExporter);
 
-        // -------------------
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, FirstItem.CURSED_MEAT, 1)
-                .input(FirstItem.ROTTEN_REMAINS)
-                .criterion(hasItem(FirstItem.ROTTEN_REMAINS), conditionsFromItem(FirstItem.ROTTEN_REMAINS))
-                .input(FirstItem.CLOTTED_BLOOD)
-                .criterion(hasItem(FirstItem.CLOTTED_BLOOD), conditionsFromItem(FirstItem.CLOTTED_BLOOD))
-                .input(Items.PORKCHOP)
-                .criterion(hasItem(Items.PORKCHOP), conditionsFromItem(Items.PORKCHOP))
-                .offerTo(recipeExporter);
-
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, FirstItem.GALIUM_INGOT, 9)
-                .input(BlocksMod.GALIUM_BLOCK)
-                .criterion(hasItem(BlocksMod.GALIUM_BLOCK), conditionsFromItem(BlocksMod.GALIUM_BLOCK))
-                .offerTo(recipeExporter);
 
 //        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, FirstItem.LIVE_INGOT, 9)
 //                .input(BlocksMod.LIVE_BLOCK)

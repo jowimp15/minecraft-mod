@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "prueva-mod:block/bloody_rocks_bricks"
+  }
+}

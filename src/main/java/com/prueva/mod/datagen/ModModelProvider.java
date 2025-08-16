@@ -5,6 +5,7 @@ import com.prueva.mod.block.BlocksMod;
 import com.prueva.mod.block.custom.LampBlock;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.block.Block;
 import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
@@ -16,7 +17,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.GREEN);
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.GALIUM_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.GALIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.CRIMSON_VEINSTONE);
         blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.CLOTTED_STONE);
@@ -28,17 +29,35 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.THIRSTY_GRASS);
         blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.LIVE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.THIRSTY_LEAVES);
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.BLOODY_ROCKS_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.DRY_BLOODY_ROCKS_BRICKS);
+        blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.CLOTTED_STONE_BRICKS);
 
+        // SET GENERATORS
+        BlockStateModelGenerator.BlockTexturePool thirstyPool =  blockStateModelGenerator.registerCubeAllModelTexturePool(BlocksMod.THIRSTY_PLANKS);
+        thirstyPool.stairs(BlocksMod.THIRSTY_STAIRS);
+        thirstyPool.slab(BlocksMod.THIRSTY_SLAB);
+        thirstyPool.fence(BlocksMod.THIRSTY_FENCE);
+        thirstyPool.fenceGate(BlocksMod.THIRSTY_FENCE_GATE);
+        thirstyPool.pressurePlate(BlocksMod.THIRSTY_PRESSURE_PLATE);
+        thirstyPool.button(BlocksMod.THIRSTY_BUTTON);
+
+        blockStateModelGenerator.registerDoor(BlocksMod.THIRSTY_DOOR);
+        blockStateModelGenerator.registerTrapdoor(BlocksMod.THIRSTY_TRAPDOOR);
+
+
+        // SAPLINGS
         blockStateModelGenerator.registerTintableCrossBlockState(BlocksMod.THIRSTY_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 //      blockStateModelGenerator.registerSimpleCubeAll(BlocksMod.BLOOD_LIQUID);
 
 
+        // LIGHT
         Identifier lamspOff = TexturedModel.CUBE_ALL.upload(BlocksMod.LAMPBLOCK, blockStateModelGenerator.modelCollector);
         Identifier lampOn = blockStateModelGenerator.createSubModel(BlocksMod.LAMPBLOCK, "_on", Models.CUBE_ALL, TextureMap::all);
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(BlocksMod.LAMPBLOCK)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(LampBlock.CLICKED, lampOn, lamspOff)));
 
-        blockStateModelGenerator.registerLog(BlocksMod.THIRSTY_WOOD).log(BlocksMod.THIRSTY_WOOD);
+        blockStateModelGenerator.registerLog(BlocksMod.THIRSTY_LOG).log(BlocksMod.THIRSTY_LOG);
     }
 
     @Override
@@ -46,7 +65,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(FirstItem.BROKEN_SWORD, Models.GENERATED);
         itemModelGenerator.register(FirstItem.GALIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(FirstItem.HECHIZO, Models.HANDHELD);
-        itemModelGenerator.register(FirstItem.ORE_GALIUM, Models.GENERATED);
+        itemModelGenerator.register(FirstItem.RAW_GALIUM, Models.GENERATED);
         itemModelGenerator.register(FirstItem.GALIUM_SWORD, Models.HANDHELD);
         itemModelGenerator.register(FirstItem.LIVE_INGOT, Models.GENERATED);
         itemModelGenerator.register(FirstItem.ORB_LIFE, Models.GENERATED);

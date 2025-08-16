@@ -4,6 +4,7 @@ import com.prueva.mod.block.BlocksMod;
 import com.prueva.mod.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.BlockTags;
@@ -19,7 +20,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(BlocksMod.GALIUM_BLOCK)
-                .add(BlocksMod.GREEN)
+                .add(BlocksMod.GALIUM_ORE)
                 .add(BlocksMod.CRIMSON_VEINSTONE)
                 .add(BlocksMod.CLOTTED_STONE)
                 .add(BlocksMod.BLOODY_ROCKS)
@@ -28,16 +29,26 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(BlocksMod.FLOWERING_ROOTS)
                 .add(BlocksMod.STACKED_ROTTEN_REMAINS)
                 .add(BlocksMod.THIRSTY_GRASS)
-                .add(BlocksMod.LIVE_BLOCK);
+                .add(BlocksMod.BLOODY_ROCKS_BRICKS)
+                .add(BlocksMod.CLOTTED_STONE_BRICKS)
+                .add(BlocksMod.DRY_BLOODY_ROCKS_BRICKS)
+                .add(BlocksMod.LIVE_BLOCK)
+                .add(BlocksMod.THIRSTY_PLANKS);
+
+        getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
+                .add(BlocksMod.THIRSTY_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.FENCE_GATES)
+                .add(BlocksMod.THIRSTY_FENCE_GATE);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
-                .add(BlocksMod.THIRSTY_WOOD);
+                .add(BlocksMod.THIRSTY_LOG);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(BlocksMod.GALIUM_BLOCK)
-                .add(BlocksMod.GREEN)
+                .add(BlocksMod.GALIUM_ORE)
                 .add(BlocksMod.FLOWERING_ROOTS);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
@@ -49,6 +60,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(BlocksMod.DRY_BLOODY_ROCKS)
                 .add(BlocksMod.DRY_ROOTED_BLOODY_ROCKS)
                 .add(BlocksMod.STACKED_ROTTEN_REMAINS)
+                .add(BlocksMod.BLOODY_ROCKS_BRICKS)
+                .add(BlocksMod.CLOTTED_STONE_BRICKS)
+                .add(BlocksMod.DRY_BLOODY_ROCKS_BRICKS)
                 .add(BlocksMod.LIVE_BLOCK);
 
         getOrCreateTagBuilder(ModTags.Blocks.TAGS_FUNCTION)
